@@ -1,0 +1,139 @@
+/**********Google Poppins Fonts**********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(42,82,190);
+    background: linear-gradient(0deg, rgba(42,82,190,1) 0%, rgba(30,144,255,1) 50%, rgba(0,127,255,1) 100%);
+}
+/*******Card Container*******/
+.profile-card-container{
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(164, 221, 237, 0.8);
+    border-radius: 25px;
+    position: relative;
+    padding: 20px 0;
+    background-color: white;
+}
+/*****Background Color******/
+.profile-card-container::before{
+    content: '';
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 25px 25px 0 0;
+    background-color: #1773EA;
+}
+/*******Profile Image*******/
+.image{
+    height: 150px;
+    width: 150px;
+    background-color: #1773EA;
+    border-radius: 50%;
+    padding: 3px;
+    position: relative;
+    /* bottom: 35px; */
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-position: center center;
+}
+
+/******Card Data********/
+.card-data{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+/******Social Icons*****/
+.social-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    margin: 0px 8px;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.facebook{
+    background-color: #1773EA;
+}
+.twitter{
+    background-color: #2AA4EF;
+}
+.instagram{
+    background-image: linear-gradient( 45deg, #5E57C4 ,#D73066, #F3CD6B);
+}
+.youtube{
+    background-color: #F70000;
+}
+/****Icon Hover Effect******/
+.icon:hover{
+    opacity: 0.8;
+}
+
+/*********Buttons*********/
+.buttons{
+    margin-top: 25px;
+}
+.buttons .button{
+    border: none;
+    padding: 8px 24px;
+    background-color: #1773EA;
+    border-radius: 50px;
+    color: white;
+    margin: 0px 8px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+}
+.button:hover{
+    background-color: #0c5ec9;
+}
+
+/******Last Section*******/
+.last-section{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.last-section .analytics{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.analytics i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.analytics:last-child{
+    border-right: none;
+}
